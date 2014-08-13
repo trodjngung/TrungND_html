@@ -1,0 +1,259 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+body{
+	margin: auto;
+	width: 70%;
+	background-color: #CDCBBA;
+}
+
+.block-bg{
+	background-color: #ffffff;
+}
+
+.heard {
+	height: auto;
+	padding-bottom: 5px;
+}
+.heard-logo,.heard-menu,.slideshow,.content,.foot-content,.foot-about {
+	margin: 0 15px;
+}
+div .heard-top {
+	background: #ba2e1f;
+	height: 35px;
+}
+div .heard-top .sign-up{
+	float: left;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+div .heard-top .sign-up a{
+	text-decoration: none;
+	color: #fff;
+	border-right: 1px solid #fff;
+	padding: 0 10px;
+}
+div .heard-top .sign-up a:hover{
+	color: #1E90FF;
+}
+div .heard-top .sign-up .last{
+	border: 0px;
+}
+div .heard-top .search{
+	float: right;
+	margin-right: 15px;
+	margin-top: 3px;
+	background: #fff;
+	padding: 1px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+div .heard-top .search #searchbtn{
+	background: url("image/search1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 26px;
+}
+div .heard-top .search input{
+	border: 0px;
+}
+div .heard-logo {
+	height: 105px;
+}
+div .logo{
+	width: 210px;
+	height: 100%;
+	float: left;
+	background: url("image/logo.png");
+	background-repeat: no-repeat;
+}
+
+.icon{
+	width: auto;
+	height: 100%;
+	float: right;
+}
+
+ul.nav-social{
+	list-style-type: none;
+	float: right;
+}
+
+.icon ul.nav-social li{
+	float: left;
+	padding: 0;
+	margin: 40px 3px;
+	width: 32px;
+	height: 32px;
+}
+
+.icon ul.nav-social li a.social-link{
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+.icon ul.nav-social li a.icon-facebook{
+	background: url("image/fb.png");
+}
+.icon ul.nav-social li a.icon-twitter{
+	background: url("image/twitter.png");
+}
+.icon ul.nav-social li a.icon-googleplus{
+	background: url("image/googleplus.png");
+}
+.icon ul.nav-social li a.icon-linkedin{
+	background: url("image/linkedin.png");
+}
+.icon ul.nav-social li a.icon-pinterest{
+	background: url("image/pinterest.png");
+}
+.icon ul.nav-social li a.icon-rss{
+	background: url("image/rss.png");
+}
+
+
+div .heard-menu {
+	background: #000;
+	height: 35px;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+}
+.heard-menu li{
+	float: left;
+	margin-right: 35px;
+	height: 35px;
+	display: block;
+	line-height: 35px;
+}
+.heard-menu li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+}
+.heard-menu li a:hover{
+	color: #ba2e1f;
+}
+.body {
+	height: 900px;
+	padding-top: 20px;	
+}
+.slideshow {
+	background: #fff;
+	height: 440px;
+}
+.slideshow .slideshow-img {
+	background: #000;
+	width: 400px;
+	height: 440px;
+	float: left;
+}
+.slideshow .slideshow-content {
+	float: left;
+	width: 474px;
+	height: auto;
+	padding-left: 40px;
+	padding-top: 150px;
+}
+h1{
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.content {
+	background: #d5d5d5;
+	height: 450px;
+	margin: 0;
+}
+.content .content-1, .content-2, .content-3{
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.content h2{
+	font-size: 24px;
+	text-transform: capitalize;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+.content .content-1 {
+	width: 31%;
+	float: left;
+	padding-left: 15px;
+}
+.content .content-1 img{
+	width: 290px;
+	height: 140px;
+	background-color: #000;
+}
+.content .content-2 {
+	width: 31%;
+	float: left;
+	padding-left: 25px;
+}
+.content-2 .content-2-div{
+	width: 100%;
+	height: 64px;
+	margin-bottom: 20px;
+	background: #cacaca;
+	float: left;
+}
+.content-2 .content-2-content{
+	float: left;
+}
+.content-2-content h3{
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 16px;
+	color: #5E5B5B;
+}
+.content-2-div .content-2-image{
+	width: 64px;
+	height: 100%;
+	background: #000;
+	margin-right: 10px;
+	float: left;
+}
+.content .content-3 {
+	width: 31%;
+	float: right;
+	padding-right: 15px;
+}
+.content-3 .content-3-div{
+	width: 100%;
+	height: 150px;
+	margin-bottom: 20px;
+	background: #cacaca;
+}
+.foot {
+	border: 1px solid #0033FF;
+	height: 350px;
+}
+div .foot-content {
+	background: #fff;
+	height: 320px;
+}
+div .foot-content .foot-content-1, .foot-content-2, .foot-content-3, .foot-content-4{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #CCC;
+	width: 25%;
+	float: left;
+}
+
+div .foot-about {
+	background: #CCC;
+	height: 30px;
+}
