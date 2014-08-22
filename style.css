@@ -1,11 +1,18 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }*/
+
+*{
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; 
+}
 
 body{
 	margin: auto;
-	width: 70%;
+	width: 1000px;
 	background-color: #CDCBBA;
 }
 
+.clear{
+	clear: both;
+}
 .block-bg{
 	background-color: #ffffff;
 }
@@ -17,52 +24,53 @@ body{
 .heard-logo,.heard-menu,.slideshow,.content,.foot-content,.foot-about {
 	margin: 0 15px;
 }
-div .heard-top {
+.heard-top {
 	background: #ba2e1f;
 	height: 35px;
 }
-div .heard-top .sign-up{
+.heard-top .sign-up{
 	float: left;
 	margin-left: 15px;
 	margin-top: 5px;
 }
-div .heard-top .sign-up a{
+.heard-top .sign-up a{
 	text-decoration: none;
 	color: #fff;
 	border-right: 1px solid #fff;
 	padding: 0 10px;
 }
-div .heard-top .sign-up a:hover{
+.heard-top .sign-up a:hover{
 	color: #1E90FF;
 }
-div .heard-top .sign-up .last{
+.heard-top .sign-up .last{
 	border: 0px;
 }
-div .heard-top .search{
+.heard-top .search{
 	float: right;
 	margin-right: 15px;
 	margin-top: 3px;
 	background: #fff;
-	padding: 1px;
+	padding: 1px 1px 1px 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px;
 }
-div .heard-top .search #searchbtn{
+.heard-top .search #searchbtn{
 	background: url("image/search1.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 26px;
 }
-div .heard-top .search input{
+.heard-top .search input{
 	border: 0px;
+	width: 200px;
 }
-div .heard-logo {
+.heard-logo {
 	height: 105px;
 }
-div .logo{
+.logo{
 	width: 210px;
 	height: 100%;
 	float: left;
@@ -116,25 +124,25 @@ ul.nav-social{
 }
 
 
-div .heard-menu {
-	background: #000;
-	height: 35px;
+.heard-menu {
+	background: url("image/menu_bg.gif") repeat-x;
+	height: 40px;
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    1px 1px 10px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.75);
 }
 .heard-menu li{
-	float: left;
-	margin-right: 35px;
-	height: 35px;
 	display: block;
-	line-height: 35px;
+    float: left;
+    height: 40px;
+    line-height: 37px;
+    margin-right: 35px;
+}
+.heard-menu li:first-child{
+	margin-left: 30px;
 }
 .heard-menu li a{
 	text-transform: uppercase;
@@ -146,25 +154,50 @@ div .heard-menu {
 	color: #ba2e1f;
 }
 .body {
-	height: 900px;
+	height: auto;
 	padding-top: 20px;	
 }
 .slideshow {
 	background: #fff;
-	height: 440px;
+	height: auto;
+	margin: 0px;
+	width: 100%;
 }
+
 .slideshow .slideshow-img {
-	background: #000;
+	float: left !important;
+	display: inline-block;
+	background: url("image/400x440.png");
 	width: 400px;
 	height: 440px;
 	float: left;
+	margin-left: 15px;
+	
 }
 .slideshow .slideshow-content {
-	float: left;
-	width: 474px;
-	height: auto;
-	padding-left: 40px;
-	padding-top: 150px;
+	display: inline-block;
+    float: right;
+    height: 55%;
+    margin-left: 40px;
+    margin-top: 75px;
+    width: 54%;
+}
+.slideshow .slideshow-content h1{
+	font-size: 68pt;
+}
+.slideshow .slideshow-content .read-more{
+	display: block;
+	margin-top: 25px;
+	text-align: right;
+	padding-right: 30px;
+}
+.slideshow .slideshow-content .read-more a{
+	color: #d1756b;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.slideshow .slideshow-content span{
+	color: #9D9D9D;
 }
 h1{
 	font-size: 60px;
@@ -173,13 +206,14 @@ h1{
 }
 
 .content {
-	background: #d5d5d5;
-	height: 450px;
-	margin: 0;
+	background: none repeat scroll 0 0 #f1f0f0;
+    display: block;
+    height: auto;
+    margin: 0;
+    width: 100%;
 }
 .content .content-1, .content-2, .content-3{
-	padding-top: 10px;
-	padding-bottom: 15px;
+	padding: 10px 0 0 0;
 }
 .content h2{
 	font-size: 24px;
@@ -188,32 +222,33 @@ h1{
 	margin-top: 25px;
 	margin-bottom: 40px;
 }
-.content .content-1 {
-	width: 31%;
+.content .content-1 {	
 	float: left;
-	padding-left: 15px;
+    height: auto;
+    padding-left: 15px;
+    width: 31%;
 }
 .content .content-1 img{
 	width: 290px;
 	height: 140px;
-	background-color: #000;
+	background: url("image/290x140.png");
 }
-.content .content-2 {
-	width: 31%;
+.content .content-2 {	
 	float: left;
-	padding-left: 25px;
+    height: auto;
+    padding-left: 25px;
+    width: 31%;
 }
 .content-2 .content-2-div{
 	width: 100%;
 	height: 64px;
 	margin-bottom: 20px;
-	background: #cacaca;
 	float: left;
 }
 .content-2 .content-2-content{
 	float: left;
 }
-.content-2-content h3{
+.content-2-content,.content-3-div h3{
 	text-transform: capitalize;
 	font-weight: bold;
 	font-size: 16px;
@@ -222,38 +257,127 @@ h1{
 .content-2-div .content-2-image{
 	width: 64px;
 	height: 100%;
-	background: #000;
+	background: url("image/64x64.png");
 	margin-right: 10px;
 	float: left;
 }
 .content .content-3 {
-	width: 31%;
 	float: right;
-	padding-right: 15px;
+    height: auto;
+    padding-right: 15px;
+    width: 31%;
 }
 .content-3 .content-3-div{
 	width: 100%;
 	height: 150px;
 	margin-bottom: 20px;
-	background: #cacaca;
 }
-.foot {
-	border: 1px solid #0033FF;
-	height: 350px;
+.content-3 .content-3-div .content-3-div-title{
+	height: 50px;
 }
-div .foot-content {
-	background: #fff;
-	height: 320px;
-}
-div .foot-content .foot-content-1, .foot-content-2, .foot-content-3, .foot-content-4{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: #CCC;
-	width: 25%;
+.content-3 .content-3-div .content-3-div-title img{
 	float: left;
 }
-
-div .foot-about {
-	background: #CCC;
+.content-3 .content-3-div h3{
+	line-height: 50px;
+}
+.body .read-more{
+	display: block;
+	margin-top: 25px;
+	text-align: right;
+	padding-right: 30px;
+}
+.body .read-more a{
+	color: #d1756b;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.foot {
+	height: 400px;
+	background: #fff;
+}
+.foot-content-1, .foot-content-2, .foot-content-3, .foot-content-4{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 22%;
+	float: left;
+}
+.foot-content-2, .foot-content-3{
+	margin-left: 40px;
+}
+.foot-content-4{
+	float: right;
+}
+.foot-content .foot-content-hr{
+	border-top: 1px solid;
+	margin: 15px 0;
+}
+.foot-content .foot-content-title{
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.foot-content .foot-content-1-content span{
+	color: red;
+}
+.foot-content .foot-content-2-content{
+	border-bottom: 1px solid #B6B7BB;
 	height: 30px;
+	line-height: 30px;
+}
+.foot-content-3 .foot-content-3-div{
+	margin-bottom: 15px;
+}
+.foot-content-3 .foot-content-3-div-heard{
+	margin-bottom: 15px;
+}
+.foot-content-3 .foot-content-3-div-heard-title{
+	font-size: 15px;
+	text-transform: capitalize;
+}
+.foot-content-3 .foot-content-3-div-heard-content{
+	font-size: 11px;
+}
+.foot-content-3 .foot-content-3-div-heard-content span{
+	color: red;
+}
+.foot-content-4 input{
+	border: none;
+	border-radius: 4px;
+	padding: 5px;
+}
+.foot-content-4 input[type="text"]{
+	background-color: #E8E9EC;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.foot-content-4 textarea{
+	background-color: #E8E9EC;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.foot-content-4 input[type="submit"]{
+	background-color: #E8E9EC;
+	color: red;
+	font-style: inherit;
+	text-transform: uppercase;
+	padding: 6px 10px;
+}
+.foot-about{
+	margin: 0;
+	background: #CCC;
+	height: 50px;
+}
+.foot-about div{
+	float: left;
+	line-height: 50px;
+	color: #757880;
+}
+.foot-about .foot-about-copy-right{
+	margin-left: 15px;
+}
+.foot-about .foot-about-by{
+	float: right;
+	margin-right: 15px;
 }
